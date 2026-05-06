@@ -7,6 +7,7 @@
     border-radius: var(--Pad16);
     justify-content: space-between;
     overflow: visible;
+    z-index: 5;
 }
     .logo-container{
         width: auto;
@@ -15,7 +16,10 @@
     }
     .search-container{
         width: fit-content;
-        height: 100%;
+        height: auto;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
         background-color: var(--Negro);
         color: var(--Blanco);
         border-radius: var(--Pad32);

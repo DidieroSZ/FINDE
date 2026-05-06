@@ -1,0 +1,6 @@
+.fastFilters-container{
+    padding: var(--Pad16);
+    border-radius: var(--Pad16);
+    border-top: solid 1px var(--Gris);
+    border-radius: 0;
+}

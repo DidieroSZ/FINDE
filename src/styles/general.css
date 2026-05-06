@@ -18,6 +18,7 @@
     --Gris: #f5f4ed;
     --Negro: #181818;
     --Negro2: #343434;
+    --Rojo: #e92027;
 
     --Pad8: 8px;
     --Pad16: 16px;
@@ -48,7 +49,11 @@
     height: 100%;
     object-fit: contain;
 }
+.trans{
+    transition: all ease-out 0.4s;
+}
 /** GENERAL STYLES */
+
 
 /** FORMATO */
 a{

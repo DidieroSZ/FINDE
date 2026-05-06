@@ -13,8 +13,10 @@ import componentStyles from '../styles/componetStyles/strong-component.css?inlin
 /* --- SERVICES --- */
 
 /* --- COMPONENTS --- */
-import '../views/navBar-view.js'
-import '../components/category-filter.js'
+import '../views/navBar-view.js';
+import '../views/display-view.js';
+import '../components/category-filter.js';
+import '../components/fast-filters.js';
 /* --- COMPONENTS --- */
 
 /* --- ICONS --- */
@@ -49,6 +51,8 @@ export class HomePage extends LitElement {
             <main class="main-section general-section">
                 <nav-bar></nav-bar>
                 <category-filter></category-filter>
+                <fast-filters></fast-filters>
+                <display-view></display-view>
             </main>
         `;
     }

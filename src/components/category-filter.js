@@ -32,15 +32,37 @@ export class CategoryFilter extends LitElement {
 
     render() {
         return html`
-            <section class="general-section category-filter d-flexx">
-                <label for="restaurantes" class="radio-category d-flexx d-col">
-                    
-                    <figure class="icon-category">${unsafeHTML(icons.restaurantes)}</figure>
-                    <input type="radio" id="restaurantes" name="category" value="restaurantes">
-                    <p class="name-category">Restaurantes</p>
-                    <span class="line-category"></span>
-                </label>
+            <section class="general-section category-filter d-flexx d-row">
+                ${this._renderCategory()}
             </section>
+        `;
+    }
+
+    _renderCategory(){
+
+        const categorias = [
+            'restaurantes',
+            'planes',
+            'bienestar',
+            'naturaleza',
+            'lugares',
+            'eventos',
+            'noche',
+            'experiencias',
+            'cultura',
+            'deporte',
+        ]
+        return html`
+            ${categorias.map((cat, index) => html`
+                <label for="${cat}" class="radio-category d-flexx d-col">
+                    <input type="radio" id="${cat}" name="category" value="${cat}" ?checked=${index == 0}>
+                    <figure class="icon-category opacity-category trans">
+                        ${unsafeHTML(icons[cat])}
+                    </figure>
+                    <p class="name-category opacity-category trans">${cat}</p>
+                    <span class="line-category trans"></span>
+                </label>
+            `)}
         `;
     }
 }
