@@ -65,12 +65,9 @@ npm run dev
 ![Lit](https://img.shields.io/badge/Lit-Element-blue)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
 ![Vite](https://img.shields.io/badge/Vite-Bundler-purple)
-![Crypto API](https://img.shields.io/badge/Web%20Crypto-Secure-green)
-![Clipboard API](https://img.shields.io/badge/Clipboard-API-orange)
+
 - **Lit (LitElement)** → Componentes web reactivos
 - **JavaScript (Vanilla)** → Lógica principal de la aplicación
 - **HTML5** → Estructura
 - **CSS3** → Estilos y layout
 - **Vite** → Entorno de desarrollo y bundling
-- **Web Crypto API** → Generación segura de contraseñas
-- **Clipboard API** → Copiado al portapapeles

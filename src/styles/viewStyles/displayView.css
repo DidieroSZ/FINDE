@@ -1,0 +1,17 @@
+.display-container{
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: auto;
+    min-height: 80vh;
+}
+    .display-sections{
+        padding: var(--Pad16);
+        border-radius: var(--Pad16);
+    }
+    aside{
+        background-color: var(--Gris);
+    }
+    article{
+        background-color: black;
+    }

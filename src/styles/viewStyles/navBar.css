@@ -1,0 +1,77 @@
+.nav{
+    width: 100%;
+    height: auto;
+    max-height: 100px;
+    background-color: var(--Gris);
+    padding: var(--Pad16);
+    border-radius: var(--Pad16);
+    justify-content: space-between;
+    overflow: visible;
+    z-index: 5;
+}
+    .logo-container{
+        width: auto;
+        height: 50px;
+        aspect-ratio: 1/1;
+    }
+    .search-container{
+        width: fit-content;
+        height: auto;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        background-color: var(--Negro);
+        color: var(--Blanco);
+        border-radius: var(--Pad32);
+        padding: var(--Pad8) var(--Pad8) var(--Pad8) var(--Pad32) ;
+        overflow: hidden;
+        gap: var(--Pad32);
+    }
+        .search-btn{
+            width: auto;
+            height: auto;
+            aspect-ratio: 1/1;
+            overflow: hidden;
+            background-color: var(--Negro2);
+            border-radius: 50%;
+            padding: var(--Pad8);
+            cursor: pointer;
+        }
+    .other-section{
+        width: auto;
+        height: 100%;
+        overflow: visible;
+        gap: var(--Pad16);
+    }
+        .dropdown {
+            position: relative;
+        }
+        .dropbtn {
+            gap: var(--Pad8);
+        }
+        .dropdown-content {
+            display: none;
+            /* margin-top: var(--Pad8); */
+            position: absolute;
+            background-color: var(--Blanco);
+            min-width: 150px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+            .dropdown-content a {
+                color: var(--Negro);
+                padding: var(--Pad8);
+                text-decoration: none;
+                display: block;
+                font-size: 12px;
+            }
+                .dropdown-content a:hover {
+                    background-color: var(--Gris);
+                }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            background-color: transparent;
+            border: none;
+            color: var(--Negro);
+        }

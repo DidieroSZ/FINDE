@@ -98,3 +98,87 @@
 - Feed tipo “scroll infinito” estilo redes sociales
 - Eventos temporales (festivales, promociones)
 - Ranking local (Top lugares de la semana)
+
+---
+
+## Categorías FINDE (Optimizada)
+
+### 1. Restaurantes
+Lugares enfocados en comida y bebidas.
+- Restaurantes
+- Cafeterías
+- Taquerías
+- Postres
+- Food trucks
+
+### 2. Planes
+Actividades casuales y accesibles para cualquier día.
+- Boliche
+- Cine
+- Arcade
+- Billar
+- Karaoke
+
+### 3. Bienestar
+Opciones para salud física y mental.
+- Spas
+- Yoga
+- Gimnasios
+- Masajes
+- Meditación
+
+### 4. Naturaleza
+Espacios y actividades al aire libre.
+- Parques
+- Senderismo
+- Miradores
+- Lagos
+- Ecoturismo
+
+### 5. Lugares
+Espacios icónicos o populares para visitar.
+- Plazas
+- Calles famosas
+- Zonas turísticas
+- Puntos instagrameables
+- Centros comerciales
+
+### 6. Eventos
+Actividades temporales o programadas.
+- Conciertos
+- Festivales
+- Ferias
+- Exposiciones
+- Shows
+
+### 7. Noche
+Vida nocturna y ambiente social.
+- Bares
+- Antros
+- Cantinas
+- Rooftops
+- After parties
+
+### 8. Experiencias
+Actividades memorables o fuera de lo común.
+- Escape rooms
+- Karting
+- Catas
+- Tours
+- Actividades inmersivas
+
+### 9. Cultura
+Contenido artístico y cultural.
+- Museos
+- Galerías
+- Teatro
+- Talleres
+- Historia
+
+### 10. Deporte
+Actividades físicas y deportivas.
+- Canchas
+- Crossfit
+- Escalada
+- Natación
+- Entrenamiento
