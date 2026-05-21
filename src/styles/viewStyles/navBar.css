@@ -20,7 +20,7 @@
         position: absolute;
         transform: translateX(-50%);
         left: 50%;
-        background-color: var(--Negro);
+        background-color: var(--Rojo);
         color: var(--Blanco);
         border-radius: var(--Pad32);
         padding: var(--Pad8) var(--Pad8) var(--Pad8) var(--Pad32) ;
@@ -32,7 +32,8 @@
             height: auto;
             aspect-ratio: 1/1;
             overflow: hidden;
-            background-color: var(--Negro2);
+            background-color: var(--Blanco);
+            color: var(--Negro);
             border-radius: 50%;
             padding: var(--Pad8);
             cursor: pointer;
@@ -51,7 +52,6 @@
         }
         .dropdown-content {
             display: none;
-            /* margin-top: var(--Pad8); */
             position: absolute;
             background-color: var(--Blanco);
             min-width: 150px;

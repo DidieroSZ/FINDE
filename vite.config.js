@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 export default defineConfig({
-    base: '/PASSWORD-GENERATOR/',
+    base: '/FINDE/',
     build: {
         outDir: 'dist',
     },
