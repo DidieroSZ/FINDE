@@ -9,6 +9,7 @@
     --Blanco: #fffefa;
     --Gris: #f5f4ed;
     --Gris2: #dee2e6;
+    --Gris3: rgba(24, 24, 24, 0.7);
     --Negro: #181818;
     --NegroClaro: rgba(24, 24, 24, 0.498);
     --Negro2: #343434;
@@ -52,7 +53,7 @@
 .img-general{
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 .trans{
     transition: all ease-out 0.4s;
@@ -77,6 +78,7 @@ a{
     padding: var(--Pad8) var(--Pad16);
     border-radius: var(--Pad32);
     cursor: pointer;
+    border: solid 1px var(--Negro);
 }
     .btn-gen:hover{
         background-color: var(--Blanco);

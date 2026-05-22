@@ -98,7 +98,7 @@ export class HomePage extends LitElement {
 
             const animationConfig = {
                 scaleY: to,
-                duration: 1.5,
+                duration: 1.2,
                 delay: 0.2,
                 stagger: {
                     each: 0.1,

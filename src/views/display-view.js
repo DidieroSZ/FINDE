@@ -11,6 +11,7 @@ import displayStyles from '../styles/viewStyles/displayView.css?inline';
 import { icons } from '../utils/icons.js'
 /* --- ICONS --- */
 
+import img1 from '../media/image-places/img-places-01.jfif'
 /**
  * An example element.
  *
@@ -33,51 +34,76 @@ export class DisplayView extends LitElement {
     render() {
         return html`
             <section class="general-section display-container">
-                <aside class="display-sections filters-container">
-                    <ul class="filters-list">
+                ${this._renderAside()}
 
-                        <li class="filter-display trans">
-                            <details class="filter-details">
-                                <summary class="filter-summary d-flexx d-row">
-                                    <span class="filter-icon d-flexx">${unsafeHTML(icons.pin)}</span>
-                                    <p>Ubicación</p>
-                                    <span class="filter-visual d-flexx trans">${unsafeHTML(icons.chevronDown)}</span>
-                                </summary>
-                            </details>
-                            <div class="filter-body trans">
-                                <div class="inner-content">
-                                    - Cerca de mí
-                                    - Distancia (1km, 5km, 10km…)
-                                    - Colonia / zona
-                                    - En mapa
-                                </div>
-                            </div>
-                        </li>
-                        <li class="filter-display trans">
-                            <details class="filter-details">
-                                <summary class="filter-summary d-flexx d-row">
-                                    <span class="filter-icon d-flexx">${unsafeHTML(icons.dollar)}</span>
-                                    <p>Precio</p>
-                                    <span class="filter-visual d-flexx trans">${unsafeHTML(icons.chevronDown)}</span>
-                                </summary>
-                            </details>
-                            <div class="filter-body trans">
-                                <div class="inner-content">
-                                    - Cerca de mí
-                                    - Distancia (1km, 5km, 10km…)
-                                    - Colonia / zona
-                                    - En mapa
-                                </div>
-                            </div>
-                        </li>
+                <article class="display-sections places-container">
+                    <div class="card d-flexx d-col layout-1">
+                        <figure class="item-card image-card">
+                            <img src="${img1}" class="img-general">
+                        </figure>
+                        <div class="item-card description-card">
+                            <h4>The Hill Guest House</h4>
+                            <p>One of Willard Price´s adventure stories featuring Hal and Roger Hunt. The boys have a new quarry. </p>
+                        </div>
+                        <hr>
+                        <div class="item-card information-card">
+                            <small class="label d-flexx d-row">${unsafeHTML(icons.search)} 4.8 Calif.</small>
+                        </div>
+                        <hr>
+                        <div class="item-card booking-card">
+                            <span class="price-tag">$620</span>
+                            <button class="btn-gen btn-booking trans">Ver Detalles</button>
+                        </div>
 
-                    </ul>
-                </aside>
-
-                <article class="display-sections">
-                    RENDER
+                    </div>
+                    <div class="card">
+                    </div>
+                    <div class="card">
+                    </div>
+                    <div class="card">
+                    </div>
                 </article>
             </section>
+        `;
+    }
+
+    _renderAside(){
+        return html`
+            <aside class="display-sections filters-container">
+                <ul class="filters-list">
+                    <li class="filter-display trans">
+                        <details class="filter-details">
+                            <summary class="filter-summary d-flexx d-row">
+                                <span class="filter-icon d-flexx">${unsafeHTML(icons.pin)}</span>
+                                <p>Ubicación</p>
+                                <span class="filter-visual d-flexx trans"
+                                >${unsafeHTML(icons.chevronDown)}</span>
+                            </summary>
+                        </details>
+                        <div class="filter-body trans">
+                            <div class="inner-content">
+                                - Cerca de mí - Distancia (1km, 5km, 10km…) - Colonia / zona
+                                - En mapa
+                            </div>
+                        </div>
+                    </li>
+                    <li class="filter-display trans">
+                        <details class="filter-details">
+                            <summary class="filter-summary d-flexx d-row">
+                                <span class="filter-icon d-flexx">${unsafeHTML(icons.dollar)}</span>
+                                <p>Precio</p>
+                                <span class="filter-visual d-flexx trans"
+                                >${unsafeHTML(icons.chevronDown)}</span>
+                            </summary>
+                        </details>
+                        <div class="filter-body trans">
+                            <div class="inner-content">
+                                - Gratis - $ - $$ - $$$ - $$$$
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </aside>
         `;
     }
 }
