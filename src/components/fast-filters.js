@@ -32,12 +32,31 @@ export class FastFilters extends LitElement {
 
     render() {
         return html`
-            <div class="general-section fastFilters-container">
-                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                <label class="form-check-label" for="checkDefault">
-                    Default checkbox
-                </label>
+            <div class="general-section fastFilters-container d-flexx d-row">
+                ${this._renderFilters()}
             </div>
+        `;
+    }
+
+    _renderFilters(){
+
+        const filtros = [
+            { key: 'all', value: 'Todos' }, 
+            { key: 'cita-romantica', value: 'Cita romántica' }, 
+            { key: 'plan-barato', value: 'Plan barato' }, 
+            { key: 'tranquilo', value: 'Tranquilo' },
+            { key: 'amigos', value: 'Amigos' },
+            { key: 'divertido', value: 'Divertido' },
+        ];
+        return html`
+            ${filtros.map(({ key, value }) => html`
+                <div class="filter-pill">
+                    <input type="checkbox" value="${key}" id="${key}">
+                    <label class="btn-gen btn-outline d-flexx d-row trans" for="${key}">
+                        ${value}
+                    </label>   
+                </div>
+            `)}
         `;
     }
 }

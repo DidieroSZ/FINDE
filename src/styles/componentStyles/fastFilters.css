@@ -1,6 +1,25 @@
 .fastFilters-container{
     padding: var(--Pad16);
     border-radius: var(--Pad16);
-    border-top: solid 1px var(--Gris);
+    border-top: solid 1px var(--Gris2);
     border-radius: 0;
+    justify-content: start;
+    gap: var(--Pad16);
 }
+    .filter-pill{
+        width: auto;
+        height: auto;
+        
+    }
+        .filter-pill > input{
+            display: none;
+        }
+        .filter-pill > label{
+            border-color: var(--Negro);
+            color: var(--Negro);
+        }
+        .filter-pill > input:checked ~ label{
+            background-color: var(--Negro);
+            color: var(--Blanco);
+            border-color: var(--Negro);
+        }
