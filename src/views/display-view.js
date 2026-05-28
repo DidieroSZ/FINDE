@@ -37,8 +37,10 @@ export class DisplayView extends LitElement {
                 ${this._renderAside()}
 
                 <article class="display-sections places-container">
+
                     <div class="card d-flexx d-col layout-1">
                         <figure class="item-card image-card">
+                            <small class="label-image">Para hoy</small>
                             <img src="${img1}" class="img-general">
                         </figure>
                         <div class="item-card description-card">
@@ -46,22 +48,20 @@ export class DisplayView extends LitElement {
                             <p>One of Willard Price´s adventure stories featuring Hal and Roger Hunt. The boys have a new quarry. </p>
                         </div>
                         <hr>
-                        <div class="item-card information-card">
-                            <small class="label d-flexx d-row">${unsafeHTML(icons.search)} 4.8 Calif.</small>
+                        <div class="item-card information-card d-flexx d-row">
+                            <small class="label d-flexx d-row">${unsafeHTML(icons.star)} <b>4.8</b> Calif.</small>
+                            <small class="label d-flexx d-row">${unsafeHTML(icons.list)} Trending</small>
+                            <small class="label d-flexx d-row"><b>+2k</b> Visitas</small>
                         </div>
                         <hr>
                         <div class="item-card booking-card">
                             <span class="price-tag">$620</span>
                             <button class="btn-gen btn-booking trans">Ver Detalles</button>
                         </div>
+                    </div>
 
-                    </div>
-                    <div class="card">
-                    </div>
-                    <div class="card">
-                    </div>
-                    <div class="card">
-                    </div>
+
+
                 </article>
             </section>
         `;
