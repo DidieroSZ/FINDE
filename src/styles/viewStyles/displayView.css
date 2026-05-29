@@ -86,7 +86,7 @@
     }
         .card{
             height: auto;
-            max-height: 450px;
+            max-height: 480px;
             width: 100%;
             padding: var(--Pad8);
             border-radius: var(--Pad16);
@@ -135,6 +135,31 @@
                     overflow: hidden;
                     border: 1px solid var(--Gris2);
                     font-size: 12px;
+                    z-index: 2;
+                    font-weight: bold;
+                }
+                .btn-float{
+                    position: absolute;
+                    z-index: 2;
+                    background-color: var(--Blanco);
+                    color: var(--Negro);
+                    border: 1px solid var(--Gris2);
+                    padding: var(--Pad8);
+                    top: var(--Pad16);
+                    right: var(--Pad16);
+                }
+                    .btn-float > svg{
+                        width: 12px;
+                        height: auto;
+                        aspect-ratio: 1/1;
+                        color: var(--Negro);
+                        stroke-width: 3px;
+                    }
+                .btn-fav{
+
+                }
+                .btn-add{
+                    top: 52px;
                 }
             .description-card{
                 max-height: 20%;
@@ -152,17 +177,17 @@
                     padding: 2px;
                     border: none;
                     border-radius: var(--Pad32);
-                    font-size: 12px;
+                    font-size: 14px;
                     color: var(--Gris3);
                     gap: 4px;
                 }
                     .label > svg{
                         color: var(--Gris3);
                     }
-                b{
-                    font-size: 12px;
-                    color: var(--Negro);
-                }
+                    .label > b{
+                        font-size: inherit;
+                        color: var(--Negro);
+                    }
                 .layout-1 .label > svg{
                     width: var(--Pad16);
                     height: auto;
@@ -170,7 +195,7 @@
                 }
 
             .booking-card{
-                max-height: 10%;
+                height: auto;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: nowrap;
@@ -185,4 +210,5 @@
                 }
                 .btn-booking{
                     width: 100%;
+                    padding: 12px;
                 }

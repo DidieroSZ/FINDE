@@ -41,6 +41,8 @@ export class DisplayView extends LitElement {
                     <div class="card d-flexx d-col layout-1">
                         <figure class="item-card image-card">
                             <small class="label-image">Para hoy</small>
+                            <button class="btn-gen btn-circle btn-fav d-flexx btn-float">${unsafeHTML(icons.heart)}</button>
+                            <button class="btn-gen btn-circle btn-add d-flexx btn-float">${unsafeHTML(icons.add)}</button>
                             <img src="${img1}" class="img-general">
                         </figure>
                         <div class="item-card description-card">
@@ -50,7 +52,29 @@ export class DisplayView extends LitElement {
                         <hr>
                         <div class="item-card information-card d-flexx d-row">
                             <small class="label d-flexx d-row">${unsafeHTML(icons.star)} <b>4.8</b> Calif.</small>
-                            <small class="label d-flexx d-row">${unsafeHTML(icons.list)} Trending</small>
+                            <small class="label d-flexx d-row">${unsafeHTML(icons.list)} <b>30</b> Top</small>
+                            <small class="label d-flexx d-row"><b>+2k</b> Visitas</small>
+                        </div>
+                        <hr>
+                        <div class="item-card booking-card">
+                            <span class="price-tag">$620</span>
+                            <button class="btn-gen btn-booking trans">Ver Detalles</button>
+                        </div>
+                    </div>
+
+                    <div class="card d-flexx d-col layout-1">
+                        <figure class="item-card image-card">
+                            <small class="label-image">Para hoy</small>
+                            <img src="${img1}" class="img-general">
+                        </figure>
+                        <div class="item-card description-card">
+                            <h4>The Hill Guest House</h4>
+                            <p>One of Willard Price´s adventure stories featuring Hal and Roger Hunt. The boys have a new quarry. </p>
+                        </div>
+                        <hr>
+                        <div class="item-card information-card d-flexx d-row">
+                            <small class="label d-flexx d-row">${unsafeHTML(icons.star)} <b>4.8</b> Calif.</small>
+                            <small class="label d-flexx d-row">${unsafeHTML(icons.list)} <b>30</b> Top</small>
                             <small class="label d-flexx d-row"><b>+2k</b> Visitas</small>
                         </div>
                         <hr>
