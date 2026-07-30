@@ -4,16 +4,16 @@ import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 import { unsafeSVG } from 'lit/directives/unsafe-svg.js';
 
 /* --- STYLES --- */
-import generalStyles from '../styles/general.css?inline';
-import navBarStyles from '../styles/viewStyles/navBar.css?inline';
+import generalStyles from '../../styles/general.css?inline';
+import navBarStyles from './navBar.css?inline';
 /* --- STYLES --- */
 
 /* --- ICONS --- */
-import { icons } from '../utils/icons.js'
+import { icons } from '../../utils/icons.js'
 /* --- ICONS --- */
 
 /* --- IMAGES --- */
-import logo from '../media/logos/icono_C.png'
+import logo from '../../media/logos/icono_C.png'
 /* --- IMAGES --- */
 
 export class NavBar extends LitElement {

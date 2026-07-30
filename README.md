@@ -27,6 +27,8 @@ views/ → Secciones grandes de la interfaz.
 pages/ → Pantallas completas asociadas a rutas.
 router/ → Lógica de navegación y renderizado de páginas.
 services/ → lógica y datos.
+utils/ → funciones y cosas utiles.
+styles/ → estilos css generales.
 ```
 ---
 

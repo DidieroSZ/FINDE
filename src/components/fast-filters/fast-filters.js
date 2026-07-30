@@ -3,12 +3,12 @@ import { unsafeCSS } from 'lit';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 
 /* --- STYLES --- */
-import generalStyles from '../styles/general.css?inline';
-import fastStyles from '../styles/componentStyles/fastFilters.css?inline';
+import generalStyles from '../../styles/general.css?inline';
+import fastStyles from './fastFilters.css?inline';
 /* --- STYLES --- */
 
 /* --- ICONS --- */
-import { icons } from '../utils/icons.js'
+import { icons } from '../../utils/icons.js'
 /* --- ICONS --- */
 
 /**

@@ -3,15 +3,15 @@ import { unsafeCSS } from 'lit';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 
 /* --- STYLES --- */
-import generalStyles from '../styles/general.css?inline';
-import displayStyles from '../styles/viewStyles/displayView.css?inline';
+import generalStyles from '../../styles/general.css?inline';
+import displayStyles from './displayView.css?inline';
 /* --- STYLES --- */
 
 /* --- ICONS --- */
-import { icons } from '../utils/icons.js'
+import { icons } from '../../utils/icons.js'
 /* --- ICONS --- */
 
-import img1 from '../media/image-places/img-places-01.jfif'
+import img1 from '../../media/image-places/img-places-01.jfif'
 /**
  * An example element.
  *

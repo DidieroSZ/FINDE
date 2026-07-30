@@ -5,17 +5,17 @@ import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 import { gsap } from "gsap";
 
 /* --- STYLES --- */
-import generalStyles from '../styles/general.css?inline';
+import generalStyles from '../../styles/general.css?inline';
 /* --- STYLES --- */
 
 /* --- SERVICES --- */
 /* --- SERVICES --- */
 
 /* --- COMPONENTS --- */
-import '../views/navBar-view.js';
-import '../views/display-view.js';
-import '../components/category-filter.js';
-import '../components/fast-filters.js';
+import '../../views/navBar-view/navBar-view.js';
+import '../../views/display-view/display-view.js';
+import '../../components/category-filter/category-filter.js';
+import '../../components/fast-filters/fast-filters.js';
 /* --- COMPONENTS --- */
 
 /**
@@ -36,9 +36,6 @@ export class HomePage extends LitElement {
 
     static styles = [
         css`${unsafeCSS(generalStyles)}`,
-        /* SuperElement.styles, */
-        /* css`${unsafeCSS(generalStyles)}`,
-        css`${unsafeCSS(componentStyles)}`, */
     ]
 
     firstUpdated(){
@@ -117,4 +114,3 @@ export class HomePage extends LitElement {
     }
 }
 customElements.define('home-page', HomePage);
-/* window.customElements.define("my-element", MyElement); */
