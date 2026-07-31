@@ -4,7 +4,7 @@ import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 
 /* --- STYLES --- */
 import generalStyles from '../../styles/general.css?inline';
-import displayStyles from './displayView.css?inline';
+import innerStyles from './displayView.css?inline';
 /* --- STYLES --- */
 
 /* --- ICONS --- */
@@ -28,7 +28,7 @@ export class DisplayView extends LitElement {
 
     static styles = [
         css`${unsafeCSS(generalStyles)}`,
-        css`${unsafeCSS(displayStyles)}`,
+        css`${unsafeCSS(innerStyles)}`,
     ]
 
     render() {

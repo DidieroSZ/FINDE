@@ -5,7 +5,7 @@ import { unsafeSVG } from 'lit/directives/unsafe-svg.js';
 
 /* --- STYLES --- */
 import generalStyles from '../../styles/general.css?inline';
-import navBarStyles from './navBar.css?inline';
+import innerStyles from './navBar.css?inline';
 /* --- STYLES --- */
 
 /* --- ICONS --- */
@@ -28,7 +28,7 @@ export class NavBar extends LitElement {
 
     static styles = [
         css`${unsafeCSS(generalStyles)}`,
-        css`${unsafeCSS(navBarStyles)}`,
+        css`${unsafeCSS(innerStyles)}`,
     ]
 
     render() {

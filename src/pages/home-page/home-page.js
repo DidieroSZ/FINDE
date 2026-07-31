@@ -6,6 +6,7 @@ import { gsap } from "gsap";
 
 /* --- STYLES --- */
 import generalStyles from '../../styles/general.css?inline';
+import innerStyles from './home-page.css?inline';
 /* --- STYLES --- */
 
 /* --- SERVICES --- */
@@ -36,6 +37,7 @@ export class HomePage extends LitElement {
 
     static styles = [
         css`${unsafeCSS(generalStyles)}`,
+        css`${unsafeCSS(innerStyles)}`,
     ]
 
     firstUpdated(){
@@ -43,6 +45,19 @@ export class HomePage extends LitElement {
     }
 
     render() {
+        return html`
+            ${this._renderAnimation()}
+            <main class="main-section general-section">
+                <nav-bar></nav-bar>
+                <category-filter></category-filter>
+                <fast-filters></fast-filters>
+                <display-view></display-view>
+            </main>
+            
+        `;
+    }
+
+    _renderAnimation(){
         return html`
             <div class="transitionContainer">
                 <div class="transition-row row-1">
@@ -60,18 +75,11 @@ export class HomePage extends LitElement {
                     <div class="block"></div>
                 </div>
             </div>
-
-            <main class="main-section general-section">
-                <nav-bar></nav-bar>
-                <category-filter></category-filter>
-                <fast-filters></fast-filters>
-                <display-view></display-view>
-            </main>
-            
         `;
     }
-    _animationLoader() {
 
+
+    _animationLoader() {
         this.blocks = this.renderRoot.querySelectorAll('.block');
         this.row1Blocks = this.renderRoot.querySelectorAll('.row-1 .block');
         this.row2Blocks = this.renderRoot.querySelectorAll('.row-2 .block');

@@ -15,6 +15,8 @@
     --Negro2: #343434;
     --Rojo: #e92027;
 
+    --trans: all ease-out 0.4s;
+
     --Pad8: 8px;
     --Pad16: 16px;
     --Pad32: 32px;
@@ -56,7 +58,7 @@
     object-fit: cover;
 }
 .trans{
-    transition: all ease-out 0.4s;
+    transition: var(--trans);
 }
 /** GENERAL STYLES */
 
@@ -79,6 +81,7 @@ a{
     border-radius: var(--Pad32);
     cursor: pointer;
     border: solid 1px var(--Negro);
+    transition: var(--trans);
 }
     .btn-gen:hover{
         background-color: var(--Blanco);

@@ -4,7 +4,7 @@ import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 
 /* --- STYLES --- */
 import generalStyles from '../../styles/general.css?inline';
-import fastStyles from './fastFilters.css?inline';
+import innerStyles from './fastFilters.css?inline';
 /* --- STYLES --- */
 
 /* --- ICONS --- */
@@ -27,7 +27,7 @@ export class FastFilters extends LitElement {
 
     static styles = [
         css`${unsafeCSS(generalStyles)}`,
-        css`${unsafeCSS(fastStyles)}`,
+        css`${unsafeCSS(innerStyles)}`,
     ]
 
     render() {
