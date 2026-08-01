@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-
 :root {
     color-scheme: light dark;
     color: #181818;
@@ -17,9 +15,30 @@
 
     --trans: all ease-out 0.4s;
 
+    --cursorPrincipal: url(../media/cursor/cursor_principal.png);
+    --cursorClick: url(../media/cursor/cursor_click.png);
+    --cursorText: url(../media/cursor/cursor_text.png);
     --Pad8: 8px;
     --Pad16: 16px;
     --Pad32: 32px;
+}
+body, html{
+    cursor: var(--cursorPrincipal), auto;
+}
+button, a, label, details{
+    cursor: var(--cursorClick), auto !important;
+}
+input{
+    cursor: var(--cursorText), auto !important;
+}
+.cursor-principal{
+    cursor: var(--cursorPrincipal), auto !important;
+}
+.cursor-click{
+    cursor: var(--cursorClick), auto !important;
+}
+.cursor-text{
+    cursor: var(--cursorText), auto !important;
 }
 
 *{
@@ -79,7 +98,7 @@ a{
     color: var(--Blanco);
     padding: var(--Pad8) var(--Pad16);
     border-radius: var(--Pad32);
-    cursor: pointer;
+
     border: solid 1px var(--Negro);
     transition: var(--trans);
 }
@@ -115,8 +134,6 @@ a{
 /** BOTONES */
 
 
-
-
 .main-section{
     width: 100%;
     min-height: 100vh;
@@ -129,37 +146,3 @@ a{
     position: relative;
     overflow: hidden;
 }
-
-
-.transitionContainer{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100dvh;
-    display: flex;
-    flex-direction: column;
-    z-index: 15;
-    pointer-events: none;
-}
-    .transition-row{
-        flex: 1;
-        display: flex;
-        justify-content: stretch;
-        align-items: stretch;
-        flex-direction: row;
-        gap: 0;
-    }
-        .transition-row.row-1 > .block{
-            transform-origin: top;
-        }
-        .transition-row.row-2 > .block{
-            transform-origin: bottom;
-        }
-        .block{
-            width: 30%;
-            flex-grow: 1;
-            flex-shrink: 1;
-            background-color: var(--Rojo);
-            transform: scaleY(1);
-        }

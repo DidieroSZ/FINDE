@@ -57,7 +57,7 @@ export class NavBar extends LitElement {
                         </div>
                     </div>
                     <a href="" class="btn-gen btn-outline">¡Unete!</a>
-                    <div class="btn-gen btn-outline btn-circle"> ${unsafeHTML(icons.user)}</div>
+                    <button class="btn-gen btn-outline btn-circle"> ${unsafeHTML(icons.user)}</button>
                 </div>
             </nav>
         `;
